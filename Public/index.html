@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="english">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenAI Image Generator</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="spinner.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <section class="mouseFollowCircle" id="circle"></section>
+
+  <section class="header">
+    <a href="">
+      <p class="logo">Owen Anderson</p>
+    </a>
+    <a href="https://openai.com/">
+        <p class="logo">OpenAI</p>
+    </a>
+  </section>
+
+  <section class="container">
+    <form class="type-box" id="image-form" data-tilt data-tilt-reverse="true" data-tilt data-tilt-speed="5000" data-tilt data-tilt-max="8">
+        <div class="type-box-title">
+          <p>Describe An Image</p>
+        </div>
+        <div class="type-box-input">
+          <input type="text" id="prompt" placeholder="Enter Text" />
+        </div>
+        <div class="type-box-size">
+          <select name="size" id="size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large" selected>Large</option>
+          </select>
+        </div>
+        <div class="type-box-btn"> 
+           <button type="submit">Generate</button>
+        </div>
+      </form>
+    <section class="image-space" data-tilt data-tilt-reverse="true" data-tilt data-tilt-speed="5000" data-tilt data-tilt-max="8">
+        <div class="image-container">
+           <img class="image" src="https://picsum.photos/1080" alt="" id="image"/>
+        </div>
+        <p class="image-message" id="image-text">waiting for action</p>
+    </section>
+  </section>
+
+  <div class="gradient-bg" id="bg">
+    <svg xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+          <feBlend in="SourceGraphic" in2="goo" />
+        </filter>
+      </defs>
+    </svg>
+    <div class="gradients-container">
+      <div class="g1"></div>
+      <div class="g2"></div>
+      <div class="g3"></div>
+      <div class="g4"></div>
+      <div class="g5"></div>
+      <div class="interactive" id="glow"></div>
+    </div>
+  </div>
+
+  <div class="spinner"> 
+     <div class="lds-grid"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+  </div>
+
+  <script type="module" src="background.js"></script>
+
+  <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+
+</body>
+</html>
