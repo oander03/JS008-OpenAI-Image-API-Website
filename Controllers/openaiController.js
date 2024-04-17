@@ -17,13 +17,13 @@ const generateImage = async (req, res) => {
         size: imageSize,
       });
   
-      const imageUrl = response.data;
+      const imageUrl = response.data[0].url;
   
       res.status(200).json({
         success: true,
-        data: imageUrl,
+        imageSrc: imageUrl,
+        resolution: imageSize,
       });
-      document.getElementById("image-text").innerHTML = "Success!";
     } 
     catch (error) {
       if (error.response) {
@@ -32,8 +32,6 @@ const generateImage = async (req, res) => {
       } else {
         console.log(error.message);
       }
-
-      document.getElementById("image-text").innerHTML = "Error";
   
       res.status(400).json({
         success: false,

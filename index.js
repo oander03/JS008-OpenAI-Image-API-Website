@@ -2,8 +2,11 @@ const path = require('path');
 const express = require('express');
 const dotenv = require('dotenv').config();
 const port = Number(process.env.PORT) || 5000;
+//const cors = require('cors');
 
 const app = express();
+
+//app.use(cors());
 
 //Enable body parser
 app.use(express.json());

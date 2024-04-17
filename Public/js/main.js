@@ -2,7 +2,7 @@ function onSubmit(e) {
     e.preventDefault();
 
     const prompt = document.querySelector('#prompt').value;
-  const size = document.querySelector('#size').value;
+    const size = document.querySelector('#size').value;
 
   if (prompt === '') {
     alert('Please add some text');
@@ -11,9 +11,13 @@ function onSubmit(e) {
 
   generateImageRequest(prompt, size);
 }
-
+const message = document.querySelector('.image-message');
+const messageSize = document.querySelector('.image-message-size');
 async function generateImageRequest(prompt, size) {
   try {
+    const image = document.querySelector('#image');
+
+    
     showSpinner();
 
     const response = await fetch('/openai/generateimage', {
@@ -35,18 +39,25 @@ async function generateImageRequest(prompt, size) {
     const data = await response.json();
     console.log(data);
 
-    // const imageUrl = data.data;
+    const imageUrl = data.imageSrc;
+    const imageSize = data.resolution;
 
-    // document.querySelector('#image').src = imageUrl;
+    image.src = imageUrl;
+    //message.textContent = prompt + " " +size;
+    // message.textContent = `${prompt} ${imageSize}`;
+    message.textContent = prompt;
+    messageSize.textContent = imageSize;
 
     removeSpinner();
+
   } catch (error) {
-    document.querySelector('.image-message').textContent = error;
+    message.textContent = error;
   }
 }
 
 function showSpinner() {
   document.querySelector('.spinner').classList.add('show');
+  message.textContent = "Loading...";
 }
 
 function removeSpinner() {
