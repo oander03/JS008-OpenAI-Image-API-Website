@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
         e.target.tagName === 'SELECT' ||
         e.target.tagName === 'INPUT' ||
         e.target.tagName === 'BUTTON' ||
-        e.target.tagName === 'BUTTON' ||
+        e.target.tagName === 'IMG' ||
         e.target.parentNode.tagName === 'IMG') {
         interBubble.classList.add('big');
     } else {

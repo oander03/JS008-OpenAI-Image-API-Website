@@ -58,6 +58,7 @@ async function generateImageRequest(prompt, size) {
 function showSpinner() {
   document.querySelector('.spinner').classList.add('show');
   message.textContent = "Loading...";
+  messageSize.textContent = "";
 }
 
 function removeSpinner() {

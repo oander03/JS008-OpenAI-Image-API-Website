@@ -21,6 +21,7 @@ font-family: 'Cinzel', serif;
 font-family: 'Kanit', sans-serif;
 */
 
+/* 
 img,
 ion-icon {
     user-select: none;
@@ -28,7 +29,8 @@ ion-icon {
     -webkit-user-drag: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-}
+} 
+*/
 
 html {
     -webkit-font-smoothing: antialiased;
@@ -82,7 +84,6 @@ a:link {
     box-shadow: 0 0 10px white;
     background-color: rgba(255, 255, 255, 1);
     pointer-events: none;
-    backdrop-filter: blur(2px);
     transition: width var(--trans-time) var(--trans-bounce), height var(--trans-time) var(--trans-bounce), border var(--trans-time) var(--trans-bounce), top var(--trans-time) var(--trans-bounce), left var(--trans-time) var(--trans-bounce), background-color var(--trans-time) var(--trans-bounce);
 }
 
@@ -98,7 +99,6 @@ a:link {
     box-shadow: 0 0 10px white;
     background-color: white;
     pointer-events: none;
-    backdrop-filter: blur(2px);
     transition: width var(--trans-time) var(--trans-bounce), height var(--trans-time) var(--trans-bounce), border var(--trans-time) var(--trans-bounce), top var(--trans-time) var(--trans-bounce), left var(--trans-time) var(--trans-bounce), background-color var(--trans-time) var(--trans-bounce);
 }
 
