@@ -27,7 +27,9 @@ git pull
  to temporarily undo stuff, do `git stash`
 
 
-
+git config --global user.name "Hydroset"
+git config --global user.email "o.m.anderson@icloud.com"
+git log
 
 
 node --version
