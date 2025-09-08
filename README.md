@@ -1,5 +1,5 @@
 # openai
-openai image starter
+openai image generator API website. A website that uses an API connection to openAIs image generator to relay what the image will be and sends back an AI generated image
 
 ## NOTES
 
