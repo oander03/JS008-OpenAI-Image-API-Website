@@ -12,8 +12,13 @@ The website allows the user to input prompts and makes an API call to OpenAIs se
 Frontend   --  HTML / CSS / JavaScript <br/>
 Backend     -- Node.js
 
-cd 'file name'  - to change directory 
-npm run dev
+## Installation📦
+
+# Clone the repository
+git clone [https://github.com/oander03/JS008-OpenAI-Image-API-Website.git](https://github.com/oander03/JS008-OpenAI-Image-API-Website.git)<br/>
+cd JS008-OpenAI-Image-API-Website<br/>
+npm install<br/>
+npm run dev<br/>
 
 git add .
 
