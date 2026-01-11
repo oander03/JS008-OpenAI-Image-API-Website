@@ -1,7 +1,11 @@
 # IMAGE GENERATOR WRAPPER WEBSITE
-openai image generator API website. A website that uses an API connection to openAIs image generator to relay what the image will be and sends back an AI generated image
+An OpenAI image generation wrapper website that has a custom made interface through using an API calls. 
+The website allows the user to input prompts and makes an API call to OpenAIs servers.
 
-## NOTES
+## Features
+- Prompt-based AI image generation
+- Clean and responsive web interface
+- Adjustable generation parameters
 
 cd 'file name'  - to change directory 
 npm run dev
