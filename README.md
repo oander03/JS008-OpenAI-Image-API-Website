@@ -14,11 +14,13 @@ Backend     -- Node.js
 
 ## Installation📦
 
-# Clone the repository
+```bash
 git clone [https://github.com/oander03/JS008-OpenAI-Image-API-Website.git](https://github.com/oander03/JS008-OpenAI-Image-API-Website.git)<br/>
 cd JS008-OpenAI-Image-API-Website<br/>
 npm install<br/>
 npm run dev<br/>
+
+## ▶️ Usage
 
 git add .
 
