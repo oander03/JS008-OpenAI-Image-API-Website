@@ -7,7 +7,7 @@ The website allows the user to input prompts and makes an API call to OpenAIs se
 - Clean and responsive web interface
 - Adjustable generation parameters
 
-## Tech Stack
+## Tech Stack 🛠️
 
 Frontend   --  HTML / CSS / JavaScript <br/>
 Backend     -- Node.js
