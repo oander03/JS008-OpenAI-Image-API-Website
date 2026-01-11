@@ -2,11 +2,7 @@
 An OpenAI image generation wrapper website that has a custom made interface through using an API calls. 
 The website allows the user to input prompts and makes an API call to OpenAIs servers.
 
-
-
-https://github.com/user-attachments/assets/82384b99-6cc1-4fdb-a53a-a4c5d86a708b
-
-
+https://github.com/user-attachments/assets/bc90afff-0f9b-4733-a4c9-9b84b3002e8c
 
 ## Features 🚀
 - Prompt-based AI image generation
