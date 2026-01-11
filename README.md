@@ -26,10 +26,6 @@ npm install
 npm run dev
 ```
 
-## License 📄
-
-This project is licensed under the MIT License.
-
-## Contact 📬
+# Contact 📬
 
 Created by Owen Anderson on 3/19/2024
