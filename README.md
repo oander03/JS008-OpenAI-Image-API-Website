@@ -10,7 +10,7 @@ The website allows the user to input prompts and makes an API call to OpenAIs se
 ## Tech Stack
 
 Frontend
-- HTML / CSS / JavaScript
+- HTML / CSS / JavaScript <br/>
 Backend
 - Node.js
 
