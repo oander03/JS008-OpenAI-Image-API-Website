@@ -9,10 +9,8 @@ The website allows the user to input prompts and makes an API call to OpenAIs se
 
 ## Tech Stack
 
-Frontend
-- HTML / CSS / JavaScript <br/>
-Backend
-- Node.js
+Frontend   --  HTML / CSS / JavaScript <br/>
+Backend     -- Node.js
 
 cd 'file name'  - to change directory 
 npm run dev
