@@ -7,6 +7,13 @@ The website allows the user to input prompts and makes an API call to OpenAIs se
 - Clean and responsive web interface
 - Adjustable generation parameters
 
+## Tech Stack
+
+Frontend
+- HTML / CSS / JavaScript
+Backend
+- Node.js
+
 cd 'file name'  - to change directory 
 npm run dev
 
