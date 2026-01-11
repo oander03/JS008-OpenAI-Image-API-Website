@@ -1,5 +1,5 @@
 # IMAGE GENERATOR WRAPPER WEBSITE
-An OpenAI image generation wrapper website that has a custom made interface through using an API calls. 
+An **OpenAI image generation wrapper** website that has a custom made interface through using an API calls. 
 The website allows the user to input prompts and makes an API call to OpenAIs servers.
 
 https://github.com/user-attachments/assets/bc90afff-0f9b-4733-a4c9-9b84b3002e8c
